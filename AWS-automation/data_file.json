@@ -1,0 +1,12 @@
+[
+    {
+        "president1": {
+            "name": "Zaphod Beeblebrox",
+            "species": "Betelgeusian"
+        },
+        "president2": {
+            "name": "Raphod Beeblebrox",
+            "species": "Betelgeusian"
+        }
+    }
+]
