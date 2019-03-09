@@ -1,18 +1,17 @@
 import json
 import requests
-from operator import itemgetter
 
 # Write File
 
 data = [
         {"president1":
             {
-            "name": "Zaphod Beeblebrox",
+            "name": "Parag Nagwekar",
             "species": "Betelgeusian",
             },
         "president2":
             {
-            "name": "Raphod Beeblebrox",
+            "name": "Barak Obama",
             "species": "Betelgeusian",
             }
         }
@@ -31,13 +30,14 @@ print(json.dumps(data, indent=4))
 d={}
 u={}
 for item in data:
-    d=item['president']
-    try:
-        u[d["name"]] +=1
-    except KeyError:
-        u[d["name"]] = 1
+    for key in item:
+        try:
+            u[item[key]["name"]] +=1
+        except KeyError:
+            u[item[key]["name"]] = 1
 print(u)
 
+'''
 response = requests.get("https://jsonplaceholder.typicode.com/todos")
 todos = json.loads(response.text)
 
@@ -75,4 +75,5 @@ for user, num_complete in top_users:
     users.append(str(user))
 
 max_users = " and ".join(users)
+
 '''
