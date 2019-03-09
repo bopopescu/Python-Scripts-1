@@ -2,7 +2,6 @@
 
 my_set={1,2,3,4,5,6,7}
 my_tuple=(7,6,5,4,3,2,1)
-
 my_dict={"1":"timepass1", "2":"timepass2", "4":"timepass4", "3":"timepass3"}
 
 for i in my_set:
