@@ -11,9 +11,9 @@ os.walk("starting_directory_path")— returns a generator with name and path inf
 os.chdir("/absolute/or/relative/path") — change the current working directory — cd
 os.path.join()—create a path for later use — no short CLI equivalent
 os.makedirs("dir1/dir2") — make directory —mkdir -p
-shutil.copy2("source_file_path", "destination_directory_path") — copy a file or directory — cp
-shutil.move("source_file_path", "destination_directory_path") — move a file or directory — mv
 os.remove("my_file_path") — remove a file — rm
 shutil.rmtree("my_directory_path")— remove a directory and all files and directories in it —rm -rf
+shutil.copy2("source_file_path", "destination_directory_path") — copy a file or directory — cp
+shutil.move("source_file_path", "destination_directory_path") — move a file or directory — mv
 
 '''

@@ -11,7 +11,6 @@ def main():
 # Create set of unique class
     for j in range(i):
         p.append(int(s[j][1]))
-
     u=set(p)
 
 # sort the list based on the 3rd element
