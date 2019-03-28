@@ -6,9 +6,6 @@ values = {'q': 'python programming tutorials'}
 data = urllib.parse.urlencode(values)
 url ='https://www.google.com/search?'+data
 
-# test URL
-print (url)
-
 '''data = data.encode('utf-8')'''
 
 # Pretend that you are Firefox
@@ -19,7 +16,7 @@ headers['User-Agent'] = "Mozilla/5.0 (X11; Linux i686)"
 # Request has R capitol. Tha means it's Class. headers is Keyword Arguments
 # Let's send request with header as if you are firefox
 
-
+# resp = urllib.request.urlopen(url)
 req = urllib.request.Request(url, headers=headers)
 resp = urllib.request.urlopen(req)
 print(resp.read())
